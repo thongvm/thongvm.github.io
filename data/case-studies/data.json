@@ -1,0 +1,87 @@
+{
+  "1": {
+    "id": 1,
+    "name": "SAIGON SPECIAL – BAT NAP SANG TAO, UONG MUNG THANH CONG",
+    "hit": "The No. 1 Social Buzz Metrics of Oct 2018",
+    "data": [
+      {
+        "key": "Total Buzz Volume",
+        "value": "149,000"
+      },
+      {
+        "key": "Audience Scale",
+        "value": "90,000"
+      }
+    ],
+    "image": "/images/case-studies/1/image.png",
+    "banner": "/images/case-studies/1/banner.png"
+  },
+  "2": {
+    "id": 2,
+    "name": "SAMSUNG GALAXY NOTE 9 DDA",
+    "hit": "Top 4 Social Media Events of Sep 2018",
+    "data": [
+      {
+        "key": "Social Engagement",
+        "value": "484,767"
+      }
+    ],
+    "image": "/images/case-studies/2/image.png",
+    "banner": "/images/case-studies/2/banner.png"
+  },
+  "3": {
+    "id": 3,
+    "name": "SAIGON SPECIAL BEACH FESTIVAL 2018",
+    "hit": "Top 6 Social Media Events of Aug 2018",
+    "data": [
+      {
+        "key": "Facebook Reach",
+        "value": "13,957,937"
+      },
+      {
+        "key": "Facebook Interaction",
+        "value": "72,959"
+      },
+      {
+        "key": "Facebook View",
+        "value": "982,100"
+      }
+    ],
+    "image": "/images/case-studies/3/image.png",
+    "banner": "/images/case-studies/3/banner.png"
+  },
+  "4": {
+    "id": 4,
+    "name": "SENDO BLACK FRIDAY - SALE BOM TẤN",
+    "hit": "Top 8 Social Media Campaigns of Nov 2018",
+    "data": [
+      {
+        "key": "Facebook engagement in 1 week",
+        "value": "13,957,937"
+      },
+      {
+        "key": "Facebook View",
+        "value": "4,154,221 in 1 week campaign-running"
+      }
+    ],
+    "image": "/images/case-studies/4/image.png",
+    "banner": "/images/case-studies/4/banner.png"
+  },
+  "5": {
+    "id": 5,
+    "name": "GRAB – CAN GI GRAB NAY",
+    "hit": "Top 8 Social Media Campaigns of Nov 2018",
+    "data": [
+      {
+        "key": "Facebook Engagement",
+        "value": "310,232"
+      },
+      {
+        "key": "Facebook View",
+        "value": "Top 9 Social Media Campaigns of Oct 2018"
+      }
+    ],
+    "image": "/images/case-studies/5/image.png",
+    "banner": "/images/case-studies/5/banner.png"
+  }
+}

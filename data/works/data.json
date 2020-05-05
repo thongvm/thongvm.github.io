@@ -1,0 +1,335 @@
+{
+  "1": {
+    "title": "Masthead PC Standard",
+    "size": "970x250",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "1.html",
+    "type": "pc",
+    "id": 1
+  },
+  "2": {
+    "title": "Masthead PC iTVC",
+    "size": "970x250",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "2.html",
+    "type": "pc",
+    "id": 2
+  },
+  "3": {
+    "title": "Masthead PC Expandable",
+    "size": "970x250<=>970x415",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "3.html",
+    "type": "pc",
+    "id": 3
+  },
+  "4": {
+    "title": "Balloon Standard",
+    "size": "300x250",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "4.html",
+    "type": "pc",
+    "id": 4
+  },
+  "5": {
+    "title": "Balloon Expandable",
+    "size": "300x250<=>500x300",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "5.html",
+    "type": "pc",
+    "id": 5
+  },
+  "6": {
+    "title": "Balloon iTVC",
+    "size": "300x250<=>500x300",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "6.html",
+    "type": "pc",
+    "id": 6
+  },
+  "7": {
+    "title": "Big Balloon Standard",
+    "size": "300x250<=>800x500",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "7.html",
+    "type": "pc",
+    "id": 7
+  },
+  "8": {
+    "title": "Big Balloon iTVC",
+    "size": "300x250<=>800x500",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "8.html",
+    "type": "pc",
+    "id": 8
+  },
+  "9": {
+    "title": "3D Box Display",
+    "size": "300x250 ,300x600",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "9.html",
+    "type": "pc",
+    "id": 9
+  },
+  "10": {
+    "title": "In Stream Display",
+    "size": "ratio 16:9",
+    "position": "by Player",
+    "file_type": "Video",
+    "file": "10.html",
+    "type": "pc",
+    "id": 10
+  },
+  "11": {
+    "title": "Outstream Video Display",
+    "size": "ratio 16:9",
+    "position": "flexible",
+    "file_type": "Video",
+    "file": "11.html",
+    "type": "pc",
+    "id": 11
+  },
+  "12": {
+    "title": "IAB Banner",
+    "size": "300x250 ,300x600 ,...",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "12.html",
+    "type": "pc",
+    "id": 12
+  },
+  "13": {
+    "title": "Banner Expandable",
+    "size": "300x250 ,300x600 ,...",
+    "position": "bottom right",
+    "file_type": "HTML5",
+    "file": "13.html",
+    "type": "pc",
+    "id": 13
+  },
+  "14": {
+    "title": "Banner iTVC",
+    "size": "300x250, 300x600, ...",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "14.html",
+    "type": "pc",
+    "id": 14
+  },
+  "15": {
+    "title": "In Footer",
+    "size": "970x90<=>970x550",
+    "position": "bottom center",
+    "file_type": "HTML5",
+    "file": "15.html",
+    "type": "pc",
+    "id": 15
+  },
+  "16": {
+    "title": "In Footer iTVC",
+    "size": "970x90<=>970x550",
+    "position": "bottom center",
+    "file_type": "HTML5",
+    "file": "16.html",
+    "type": "pc",
+    "id": 16
+  },
+  "17": {
+    "title": "Sidekick",
+    "size": "300x250<=>850x700",
+    "position": "top right",
+    "file_type": "HTML5",
+    "file": "17.html",
+    "type": "pc",
+    "id": 17
+  },
+  "18": {
+    "title": "Sidekick iTVC",
+    "size": "300x250<=>850x700",
+    "position": "top right",
+    "file_type": "HTML5",
+    "file": "18.html",
+    "type": "pc",
+    "id": 18
+  },
+  "19": {
+    "title": "Background Standard",
+    "size": "160x600, 300x600",
+    "position": "left, right",
+    "file_type": "HTML5",
+    "file": "19.html",
+    "type": "pc",
+    "id": 19
+  },
+  "20": {
+    "title": "Background iTVC",
+    "size": "300x600",
+    "position": "left, right",
+    "file_type": "HTML5",
+    "file": "20.html",
+    "type": "pc",
+    "id": 20
+  },
+  "21": {
+    "title": "Page Takeover",
+    "size": "970x250<=>full responsive",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "21.html",
+    "type": "pc",
+    "id": 21
+  },
+  "22": {
+    "title": "Synchronized",
+    "size": "750x200, 170x536",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "22.html",
+    "type": "pc",
+    "id": 22
+  },
+  "23": {
+    "title": "Synchronized Takeover",
+    "size": "750x200, 170x536",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "23.html",
+    "type": "pc",
+    "id": 23
+  },
+  "24": {
+    "title": "In-feed Native Display",
+    "size": "by page size",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "24.html",
+    "type": "pc",
+    "id": 24
+  },
+  "25": {
+    "title": "Widgets Native",
+    "size": "by page size",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "25.html",
+    "type": "pc",
+    "id": 25
+  },
+  "26": {
+    "title": "Ecommerce Display",
+    "size": "300x250 ,300x600, ...",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "26.html",
+    "type": "pc",
+    "id": 26
+  },
+  "27": {
+    "title": "Interactive Video",
+    "size": "by Video Player Size",
+    "position": "flexible",
+    "file_type": "Video",
+    "file": "27.html",
+    "type": "pc",
+    "id": 27
+  },
+  "28": {
+    "title": "Masthead Mobile",
+    "size": "480x270",
+    "position": "top center",
+    "file_type": "HTML5",
+    "file": "28.html",
+    "type": "mobile",
+    "id": 28
+  },
+  "29": {
+    "title": "Mobile Inpage",
+    "size": "384x683",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "29.html",
+    "type": "mobile",
+    "id": 29
+  },
+  "30": {
+    "title": "Mobile First View",
+    "size": "384x683",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "30.html",
+    "type": "mobile",
+    "id": 30
+  },
+  "31": {
+    "title": "Outstream Video Mobile",
+    "size": "ratio 16:9",
+    "position": "flexible",
+    "file_type": "Video",
+    "file": "31.html",
+    "type": "mobile",
+    "id": 31
+  },
+  "32": {
+    "title": "In Stream Mobile",
+    "size": "ratio 16:9",
+    "position": "flexible",
+    "file_type": "Video",
+    "file": "32.html",
+    "type": "mobile",
+    "id": 32
+  },
+  "33": {
+    "title": "3D Box Mobile",
+    "size": "300x250 ,300x600",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "33.html",
+    "type": "mobile",
+    "id": 33
+  },
+  "34": {
+    "title": "Mobile Adhesion",
+    "size": "300x50<=>full responsive",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "34.html",
+    "type": "mobile",
+    "id": 34
+  },
+  "35": {
+    "title": "In-feed Native Mobile",
+    "size": "flexible",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "35.html",
+    "type": "mobile",
+    "id": 35
+  },
+  "36": {
+    "title": "Ecommerce Mobile",
+    "size": "300x250, 300x600",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "36.html",
+    "type": "mobile",
+    "id": 36
+  },
+  "37": {
+    "title": "Mobile Standard",
+    "size": "300x250, 300x600",
+    "position": "flexible",
+    "file_type": "HTML5",
+    "file": "37.html",
+    "type": "mobile",
+    "id": 37
+  }
+}

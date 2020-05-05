@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demo.yomedia.vn/credentials/in-stream/pre-roll/"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+    <title>Yomedia Demo Ads on Player</title>
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <!--link rel="stylesheet" type="text/css" href="source/videojs/styles/ads-label.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/black-poster.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vast.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/video-js.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vpaid.css"-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--script src="source/videojs/js/video.js"></script>
+    <script src="source/videojs/js/es5-shim.js"></script>
+    <script src="source/videojs/js/ie8fix.js"></script>
+    <script src="source/videojs/js/swfobject.js"></script>
+    <script src="source/videojs/js/videojs-vast-vpaid.js"></script-->
+    <!--link rel="stylesheet" type="text/css" href="style.css"-->
+    <!--script type="text/javascript" src="source/jw-v7/jwplayer.js"></script>
+    <script>jwplayer.key="dWwDdbLI0ul1clbtlw+4/UHPxlYmLoE9Ii9QEw==";</script-->
+
+    <script type="text/javascript" src="source/jw-v8/jwplayer.js"></script>
+    <script>jwplayer.key="F1U56v9F9VYRtROmtMj5qrBBF9G+XntIlkVwPw==";</script>
+    <style type="text/css">
+        #player{
+            width: 640px !important;
+            height: 360px !important;
+            float: left;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            #player_container {
+                width: 100% !important;
+                height:  200px !important;
+            }
+            #player{
+                width: 100% !important;
+                left: 0px;
+                right: 0px;
+                margin:auto;
+                height: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div class="container">
+    <header>
+        <div id="logo">
+            <img src="images/logo.png">
+        </div>
+        <ul id="menu_moblie">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!--div id="master_header">
+            <p>728x90</p>
+        </div-->
+    </header>
+    <div style="clear: both;"></div>
+    <div style="height: 30px; width: 100%; background:#e7e7e7"> </div>
+    <!--div id="banner"><p>950x250</p></div-->
+    <!--script type="text/javascript">
+    /* load placement: pinetech-masthead-pc, for account: Operating Publisher, site: pinetech.vn, size: 970x250 - display */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["b6610c6c238e4ad8a1b5b8ad6150ed76","[DIV_ID]","[WIDTH]","[HEIGHT]"]);
+    </script>
+    <script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js?v=3" id="s-b6610c6c238e4ad8a1b5b8ad6150ed76" async></script-->
+
+
+    <!--script type="text/javascript">
+        /* load placement: yen-billboard, for account: Operating Publisher, site: yen.yomedia.vn, size: 970x250 - display */
+        var _avlVar = _avlVar || [];
+        _avlVar.push(["82e237b1f272486587de2dbd5c9478c0","[content_page_url]","[width]","[height]"]);
+    </script>
+    <script type="text/javascript" src="//ss.yomedia.vn/js/yo-delivery.js?v=3" id="s-82e237b1f272486587de2dbd5c9478c0"></script-->
+
+
+
+    <!--script type="text/javascript">
+    /* load placement: pinetech-masthead-mobile, for account: Operating Publisher, site: pinetech.vn, size: 480x270 - mobile */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["938c62dedf7d4d6eb0596e1ac088a7db","[content_page_url]","[width]","[height]"]);
+    </script>
+    <script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js?v=3" id="s-938c62dedf7d4d6eb0596e1ac088a7db"></script-->
+    <div id="content">
+        <div id="abdf">
+            <div>
+                <div style="height: auto; width: 170px; float: left;">
+                    <div style="height: 150px; width: 170px; background: #ddd; margin-bottom: 5px; margin-top: 5px;margin-left: 5px;">
+                    </div>
+                    <div >
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                    </div>
+                </div>
+                <ul style="width: 67%; float: left;">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <div id="player_container" class="clear_both">
+                <!--video id="yomedia-video" class="video-js vjs-default-skin" style="margin-left:auto; margin-right:auto; left:0; right:0;"><source src="pub-video.mp4" type="video/mp4" /></video-->
+                <div id="player"></div>
+                <script type="text/javascript">
+                  jwplayer("player").setup({
+                    advertising: {
+                      "autoplayadsmuted": true,
+                      client: "vast",
+                      skipoffset: 5,
+                      "adschedule": {
+                        "myPreroll": {
+                          "offset": "pre",
+                          // Vast 2
+                          //"tag": "http://delivery.yomedia.vn/vast?pid=2177d9f1111f40dc962cbcbb37396780&vast=3&ec=0&ref=[content_page_url]&w=[player_width]&h=[player_height]"
+                          //"tag": "http://tag.gammaplatform.com/adx/request/?wid=1530770915&zid=1533866630&content_page_url=[yomedia_referer]&cb=[timestamp]&player_width=__player-width__&player_height=__player-height__&device_id=__device-id__"
+                          "tag": "vast.xml"
+                        },
+                        "myPostroll": {
+                          "offset": "post",
+                          //"tag": "http://delivery.yomedia.vn/vast?pid=bd55a99def6040a8b82a11680cb6a5f5&vast=3&ec=0&ref=[content_page_url]&w=[player_width]&h=[player_height]"
+                        }
+                      }
+                    },
+                    width: '100%',
+                    height: 'auto',
+                    autostart: true,
+                    sources: [
+                      {file:"pub-video.mp4", type: "mp4", "label":"360p"}
+                    ],
+                  });
+                </script>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div class="content clear_both">
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul style="">
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <!--div id="inread-video" tyle="width: 640px;"></div-->
+            <!--script type="text/javascript">
+                /* load placement: yen-inread-video, for account: Operating Publisher, site: yen.yomedia.vn, size: 2x2 - video */
+                var _avlVar = _avlVar || [];
+                _avlVar.push(["239e6a5992e5442c836c1980894e8dc0","[content_page_url]","[width]","[height]"]);
+            </script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js?v=3" id="s-239e6a5992e5442c836c1980894e8dc0"></script-->
+
+            <div class="content clear_both">
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+            </div>
+            <!--div id="mobile-inpage"></div-->
+            <!--script type="text/javascript">
+/* load placement: pinetech-interscroller, for account: Operating Publisher, site: pinetech.vn, size: 2x2 - mobile */
+var _avlVar = _avlVar || [];
+_avlVar.push(["98da40bcdf7a4d849b8e4620be4df568","[content_page_url]","[width]","[height]"]);
+</script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yo-delivery.js?v=3" id="s-98da40bcdf7a4d849b8e4620be4df568"></script-->
+
+            <!--script type="text/javascript">
+             /* load placement: yen-inpage, for account: Operating Publisher, site: yen.yomedia.vn, size: 2x2 - mobile */
+             var _avlVar = _avlVar || [];
+             _avlVar.push(["26ae6e3c7c164aa08c839f0720c8839e","[content_page_url]","[width]","[height]"]);
+         </script>
+         <script type="text/javascript" src="//ss.yomedia.vn/js/yo-delivery.js?v=3" id="s-26ae6e3c7c164aa08c839f0720c8839e"></script-->
+
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div id="outstream"></div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div class="content clear_both">
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+            <div class="content clear_both">
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+            </div>
+            <div class="content clear_both">
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+                <article>
+                </article>
+                <ul>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 100%;"></li>
+                    <li style="width: 25%;"></li>
+                </ul>
+            </div>
+        </div>
+        <div id="menu_right">
+            <div id="banner_300x250"><!--p>300x250</p-->
+                <!--script type="text/javascript">
+                if (screen && screen.width >= 1024) { // Code PC
+                    var _avlVar = _avlVar || [];_avlVar.push(["5bc0be08afca491daf6a4cf6ffb378e5"]);document.write('<script type="text\/javascript" src="\/\/ss.yomedia.vn\/js\/yomedia-sdk.js?v=3" id="s-5bc0be08afca491daf6a4cf6ffb378e5"><\/script>');
+                } else { // Code Mobile
+                   var _avlVar = _avlVar || [];_avlVar.push(["5efc9d0c4b41457b8f17962451c9b89d"]);document.write('<script type="text\/javascript" src="\/\/ss.yomedia.vn\/js\/yomedia-sdk.js?v=3" id="s-5efc9d0c4b41457b8f17962451c9b89d"><\/script>');
+                }
+                </script-->
+                <!--script type="text/javascript">
+                    /* load placement: yen_iab-pc-300x250, for account: Operating Publisher, site: yen.yomedia.vn, size: 300x250 - display */
+                    var _avlVar = _avlVar || [];
+                    _avlVar.push(["6854676133d94abf9c4f094a72fe4d45","[content_page_url]","[width]","[height]"]);
+                </script>
+                <script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js?v=3" id="s-6854676133d94abf9c4f094a72fe4d45"></script-->
+
+
+
+
+            </div>
+            <div id="banner_300x600"><!--p>300x600</p-->
+            </div>
+            <div class="clear_both">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <ul style="width: 100%; float: left; padding-left: 0;">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <footer style="height: 30px; width: 100%; background:#e7e7e7"></footer>
+</div>
+<!--script type="text/javascript">
+    vjs=videojs("yomedia-video", {hls: {withCredentials: true},"controls": false,"autoplay": false, "preload": "false" });
+
+    vjs.vastClient({
+        url: 'http://delivery.yomedia.vn/vast?pid=0681c381c8364325a1a242bd9340eebf&ec=0',
+        playAdAlways: true,
+        adCancelTimeout: 10000
+    });
+    vjs.play();
+</script-->
+</body>
+<!--script type="text/javascript">
+    /* load placement: pinetech-balloon, for account: Operating Publisher, site: pinetech.vn, size: 1x1 - display */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["8e079a8377d14695bba178786ee8f0fb","[DIV_ID]","[WIDTH]","[HEIGHT]"]);
+</script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js" id="s-8e079a8377d14695bba178786ee8f0fb" async></script-->
+<!--script type="text/javascript">
+    /* load placement: pinetech-instream, for account: Operating Publisher, site: pinetech.vn, size: 1x1 - video */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["f1d947054de643a2896596445adc2d5a","[DIV_ID]","[WIDTH]","[HEIGHT]"]);
+</script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js" id="s-f1d947054de643a2896596445adc2d5a" async></script-->
+<!--script type="text/javascript">
+    /* load placement: pinetech-interstitial, for account: Operating Publisher, site: pinetech.vn, size: 1x1 - mobile */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["2c635d4a3241424a8bcf29f5b5e19d48","[DIV_ID]","[WIDTH]","[HEIGHT]"]);
+</script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js" id="s-2c635d4a3241424a8bcf29f5b5e19d48" async></script-->
+
+<!--script type="text/javascript">
+    /* load placement: yen-balloon, for account: Operating Publisher, site: yen.yomedia.vn, size: 1x1 - display */
+    var _avlVar = _avlVar || [];
+    _avlVar.push(["4d1cb609ac7643ab863f58b3a095966b","[content_page_url]","[width]","[height]"]);
+</script>
+<script type="text/javascript" src="//ss.yomedia.vn/js/yomedia-sdk.js?v=3" id="s-4d1cb609ac7643ab863f58b3a095966b"></script-->
+
+
+
+</html>
+

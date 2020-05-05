@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demo.yomedia.vn/credentials/interactive-video-pre-roll/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Yomedia Demo Ads on Player</title>
+    <script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="demo-vast.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/ads-label.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/black-poster.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vast.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/video-js.css">
+    <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vpaid.css">
+    <link rel="stylesheet" type="text/css" href="./customer.css">
+
+    <script src="source/videojs/js/video.js"></script>
+    <script src="source/videojs/js/es5-shim.js"></script>
+    <script src="source/videojs/js/ie8fix.js"></script>
+    <script src="source/videojs/js/swfobject.js"></script>
+    <script src="source/videojs/js/videojs-vast-vpaid.js"></script>
+
+    <!--script>
+    var assetURL = 'http://admin.yomedia.vn/public/';
+	var defaultObj = {
+        player : 'player',
+        adTag : 'vast.php',
+	//adTag: 'http://delivery.yomedia.vn/vast?ec=0&wid=421&zid=1711&tag=',
+        vastXML : '',
+        mediaFile : "video/pub-video.mp4",
+        mediaImage:"video/traintracks480.jpg"
+}
+    </script-->
+</head>
+<body class="demo_vast tvtuoitre" style="overflow: scroll; background: url(images/marry.png) top center no-repeat">
+<div class="container">
+    <div id="player_container">
+        <video id="yomedia-video" width="680" height="383" class="video-js vjs-default-skin" style="margin-left:auto; margin-right:auto; left:0; right:0;" muted autoplay ><source src="pub-video.mp4" type="video/mp4" /></video>
+    </div>
+</div>
+<div class="mask">
+
+</div>
+<script>
+  vjs=videojs("yomedia-video", {hls: {withCredentials: true},"controls": true,"autoplay": true, "preload": "true" , "muted":true });
+
+  vjs.vastClient({
+    url: 'vast.xml',
+    //url: 'vast.php',
+    playAdAlways: true,
+    adCancelTimeout: 10000
+  });
+  //vjs.play();
+</script>
+</body>
+</html>

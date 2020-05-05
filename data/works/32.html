@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="http://demo.yomedia.vn/credentials/in-stream-mobile/pre-roll/mobile/"/>
+        <title>VIDEO: Trọng tài thổi quả pen không tưởng cho Barca - Thể Thao 247</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="Content-Language" content="vi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <!-- begin videojs -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/ads-label.css">
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/black-poster.css">
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vast.css">
+
+        <!-- VideoJs required styles-->
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/video-js.css"/>
+
+        <!-- VideoJs.vast.vpaid required styles-->
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/videojs.vast.vpaid.css"/>
+
+        <!-- DEMO required styles-->
+        <link rel="stylesheet" type="text/css" href="source/videojs/styles/demo.css"/>
+        <!-- VideoJs required scripts-->
+        <script type="text/javascript" src="source/videojs/js/video.js"></script>
+
+        <!-- VideoJs.vast.vpaid required scripts-->
+        <script type="text/javascript" src="source/videojs/js/es5-shim.js"></script>
+        <script type="text/javascript" src="source/videojs/js/ie8fix.js"></script>
+        <script type="text/javascript" src="source/videojs/js/videojs_5.vast.vpaid.js"></script>
+        <!-- end begin videojs -->
+    </head>
+<body>
+<div id="wrapper">
+    <img src="images/bg_1.png" style="width: 100%;" />
+    <div class="video-inner">
+        <video id="yomedia-video" width="300" height="200" class="video-js vjs-default-skin" style="margin-left:auto; margin-right:auto; left:0; right:0;"><source src="video/trong-tai-thoi-qua-pen-khong-tuong-cho-barca149542.mp4" type="video/mp4" /></video>
+    </div>
+    <img src="images/bg_2.png" style="width: 100%;" />
+</div>
+<script>
+  vjs=videojs("yomedia-video", {hls: {withCredentials: true},"controls": true,"autoplay": true, "preload": "false" });
+
+  vjs.vastClient({
+    //url: 'http://delivery.yomedia.vn/vast?pid=8ca667c945444d94b5483af8ededa280&ec=0',
+    url: 'vast.php',
+    playAdAlways: true,
+    adCancelTimeout: 10000
+  });
+
+  vjs.play();
+</script>
+
+</body>
+</html>
